@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-motorhome-card',
-  standalone: true,
-  imports: [],
   templateUrl: './motorhome-card.component.html',
-  styleUrl: './motorhome-card.component.css'
+  styleUrls: ['./motorhome-card.component.css']
 })
-export class MotorhomeCardComponent {
 
+export class MotorhomeCardComponent {
+  @Input() nombre: string = '';
+  @Input() descripcion: string | null = '';
+  @Input() imagen: string = '';
 }
