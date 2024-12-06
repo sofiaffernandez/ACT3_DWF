@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  standalone: true,
+  imports: [FormsModule],
+  templateUrl: './contact-view.component.html',
+  styleUrls: ['./contact-view.component.css']
 })
 export class ContactComponent {
   contact = {
