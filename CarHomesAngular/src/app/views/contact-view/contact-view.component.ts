@@ -1,12 +1,19 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-contact-view',
-  standalone: true,
-  imports: [],
-  templateUrl: './contact-view.component.html',
-  styleUrl: './contact-view.component.css'
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css']
 })
-export class ContactViewComponent {
+export class ContactComponent {
+  contact = {
+    name: '',
+    email: '',
+    message: ''
+  };
 
+  onSubmit() {
+    console.log('Formulario enviado:', this.contact);
+    alert('Formulario enviado')
+  }
 }
