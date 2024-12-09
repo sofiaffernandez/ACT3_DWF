@@ -4,5 +4,22 @@
 }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.custom-btn {
+  background-color: #CC460A; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.custom-btn:hover {
+  background-color: #FF5E13; 
 }

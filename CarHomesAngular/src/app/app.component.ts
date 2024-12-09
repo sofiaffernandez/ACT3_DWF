@@ -1,15 +1,21 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { AppFooterComponent } from './components/app-footer/app-footer.component';
 import { NavbarComponent } from './components/nav-bar/nav-bar.component';
-import { routes } from './app.routes';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent, RouterModule],
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    AppFooterComponent,
+    NavbarComponent
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  static routes = routes;
+  title = 'car-homes-angular';
 }

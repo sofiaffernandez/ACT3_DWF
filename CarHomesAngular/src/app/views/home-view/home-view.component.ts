@@ -1,7 +1,8 @@
-import { Component, NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MotorhomeCardComponent } from '../../components/motorhome-card/motorhome-card.component';
 import { TestimonialsComponent } from '../../components/customer-testimonials/customer-testimonials.component';
+import { AppFooterComponent } from '../../components/app-footer/app-footer.component';
 
 interface Motorhome {
   nombre: string;
@@ -12,7 +13,12 @@ interface Motorhome {
 @Component({
   selector: 'app-home-view',
   standalone: true,
-  imports: [CommonModule, MotorhomeCardComponent, TestimonialsComponent],
+  imports: [
+    CommonModule, 
+    MotorhomeCardComponent, 
+    TestimonialsComponent,
+    AppFooterComponent
+  ],
   templateUrl: './home-view.component.html',
   styleUrls: ['./home-view.component.scss']
 })

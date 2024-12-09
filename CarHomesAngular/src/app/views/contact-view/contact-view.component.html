@@ -11,9 +11,9 @@
     </div>
     <div class="mb-3">
       <label for="message" class="form-label">Mensaje</label>
-      <textarea class="form-control" id="message" name="message" rows="3" [(ngModel)]="contact.message"
-        required></textarea>
+      <textarea class="form-control" id="message" name="message" rows="3" [(ngModel)]="contact.message" required></textarea>
     </div>
-    <button type="submit" class="btn btn-primary" [disabled]="!contactForm.form.valid">Enviar</button>
+    <button type="submit" class="btn custom-btn" [disabled]="!contactForm.form.valid">Enviar</button>
   </form>
 </div>
+
