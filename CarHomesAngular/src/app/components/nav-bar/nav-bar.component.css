@@ -1,0 +1,24 @@
+.custom-bg {
+  background-color: #003B5C !important;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #BAD2EF !important;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 94, 19, 1);
+}
+
+.navbar-toggler-icon {
+  background-image: linear-gradient(#ffffff, #ffffff);
+}
+
+.navbar-logo {
+  max-height: 40px;
+  width: auto;
+}

@@ -1,1 +1,24 @@
-<p>customer-testimonials works!</p>
+<div class="testimonials my-4">
+  <h2 class="text-center mb-4">Lo que dicen nuestros clientes</h2>
+  <div class="row">
+    <div *ngFor="let testimonial of testimonials; let i = index" class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <p class="card-text">"{{ testimonial.comentario }}"</p>
+          <div class="d-flex align-items-center mt-3">
+            <img
+              [src]="testimonial.foto"
+              alt="Foto del cliente"
+              class="rounded-circle me-3"
+              width="50"
+            />
+            <div>
+              <strong>{{ testimonial.nombre }}</strong>
+              <p class="text-muted mb-0">{{ testimonial.ciudad }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

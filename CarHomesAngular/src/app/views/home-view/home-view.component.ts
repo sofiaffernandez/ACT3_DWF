@@ -1,6 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MotorhomeCardComponent } from '../../components/motorhome-card/motorhome-card.component';
+import { TestimonialsComponent } from '../../components/customer-testimonials/customer-testimonials.component';
 
 interface Motorhome {
   nombre: string;
@@ -10,6 +11,8 @@ interface Motorhome {
 
 @Component({
   selector: 'app-home-view',
+  standalone: true,
+  imports: [CommonModule, MotorhomeCardComponent, TestimonialsComponent],
   templateUrl: './home-view.component.html',
   styleUrls: ['./home-view.component.scss']
 })
@@ -48,12 +51,4 @@ export class HomeViewComponent {
   ];
 }
 
-@NgModule({
-  imports: [CommonModule],
-  declarations: [
-    HomeViewComponent,
-    MotorhomeCardComponent,
-  ],
-  exports: [HomeViewComponent]
-})
 export class HomeViewModule { }
