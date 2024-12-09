@@ -1,0 +1,12 @@
+.text-justify {
+  text-align: justify;
+}
+
+.img-fluid {
+  margin-bottom: 20px;
+}
+
+.fst-italic {
+  font-style: italic;
+  color: hsl(0, 0%, 33%);
+}

@@ -8,6 +8,11 @@ import { CitySliderComponent } from '../../components/city-slider/city-slider.co
   templateUrl: './about-view.component.html',
   styleUrl: './about-view.component.css'
 })
-export class AboutComponent {
 
+export class AboutComponent {
+  cityImages = [
+    'assets/madrid.jpg',
+    'assets/barcelona.jpg',
+    'assets/sevilla.jpg',
+  ];
 }
